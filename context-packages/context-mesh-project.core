@@ -1,0 +1,81 @@
+# CONTEXT-MESH-PROJECT.core v1
+# ═══════════════════════════════════════════════════════════════════
+# encoding: core/1.0
+# created: 2026-05-10
+# author: Brian Dawson <stylz>
+# namespace: project:context-mesh
+# direction_policy: bidirectional
+# domain: personal-project-context
+# decoder: /mnt/skills/user/core-format/SKILL.md
+# ═══════════════════════════════════════════════════════════════════
+
+## Ω (omega: purpose)
+context-mesh := MCP server → cross-surface AI context sync
+¬context-blindness ∀ AI surfaces → coherent identity + state
+
+## Σ (sigma: state)
+```
+EXISTS := {
+  src/types/index.ts (all types),
+  src/lib/direction.ts (policy engine + hard block),
+  src/lib/core-encoder.ts (.core encode/decode/coremin),
+  src/lib/ship-ape.ts (local file store, data/packages/),
+  src/lib/seed-loader.ts (loads .core files on seed),
+  src/tools/pull.ts (context_pull: direction-filtered merge),
+  src/tools/push.ts (context_push: policy-gated writes),
+  src/tools/distill.ts (context_distill: Claude API → .core),
+  src/tools/sync.ts (context_sync: TTL expiry + reports),
+  src/tools/set-policy.ts (context_set_policy: persistent overrides),
+  src/index.ts (MCP server, 8 tools, --seed/--sync CLI modes),
+  context-packages/ (brian-personal.core, brian-shared.core, this file),
+  context-mesh-scheduler/ (separate repo, StdioClientTransport wired),
+  docs/ (ONESHEET, USER_GUIDE, ARCHITECTURE_DIAGRAM, PRESS_RELEASE)
+}
+NEEDED := {
+  Phase 5: PM Hub system prompt injection integration,
+  Ship APE sync layer (optional Phase 2+ enhancement),
+  Claude Desktop config tested in prod,
+  context_list guard for _reports/_policies dirs
+}
+```
+
+## Φ (phi: patterns)
+```
+architecture := local_first → no external deps for storage
+storage := data/packages/{namespace}/{id}.json
+key_decision := Ship_APE_MCP_tools ¬→ machine_readable (truncates at 77-100 chars)
+  → local file store chosen for Phase 1
+hard_block := work ¬→ personal_surfaces (code-level, ¬overridable)
+edge_bird_fix := was classified 'custom' → now 'personal' (hard-coded in getSurfaceOwnerGroup)
+distill_model := claude-haiku-4-5-20251001 (configurable via DISTILL_MODEL env)
+scheduler := StdioClientTransport → spawns context-mesh as subprocess
+```
+
+## Ρ (rho: roadmap)
+```
+done:     Phase 1 (core MCP), Phase 2 (policy persist), Phase 3 (distill), Phase 4 (scheduler)
+next:     Phase 5 (PM Hub injection), Claude Desktop prod wiring
+horizon:  Ship APE sync layer, multi-user support, web UI for package management
+```
+
+## Λ (lambda: architecture)
+```
+surfaces → context-mesh MCP (stdio) → DirectionEngine → LocalFileStore
+scheduler → StdioClientTransport → context-mesh MCP → context_sync + context_distill
+.core format: Ω Σ μ Ρ Φ χ Λ Γ ε ν τ Π Δ Ψ κ sections
+namespace_groups: personal={personal-claude, edge-bird, day-one}, work={work-claude, pm-hub}, custom=*
+```
+
+## χ (chi: verification)
+```
+Q1: storage backend? A: local files (data/packages/), ¬Ship APE MCP tools
+Q2: hard block surfaces? A: personal-claude, edge-bird, day-one (work ¬→ all three)
+Q3: distill model? A: claude-haiku-4-5-20251001 (env: DISTILL_MODEL)
+Q4: scheduler transport? A: StdioClientTransport (spawns context-mesh as subprocess)
+Q5: phases complete? A: 1-4 done, Phase 5 (PM Hub) pending
+Q6: edge-bird fix? A: was 'custom' group → fixed to 'personal' in getSurfaceOwnerGroup
+```
+
+# ═══════════════════════════════════════════════════════════════════
+# EOF
+# ═══════════════════════════════════════════════════════════════════

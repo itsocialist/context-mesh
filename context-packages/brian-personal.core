@@ -1,0 +1,96 @@
+# BRIAN-PERSONAL.core v1
+# ═══════════════════════════════════════════════════════════════════
+# encoding: core/1.0
+# created: 2026-03-23
+# author: Brian Dawson <stylz>
+# namespace: personal
+# direction_policy: bidirectional
+# domain: personal-identity-context
+# decoder: /mnt/skills/user/core-format/SKILL.md
+# ═══════════════════════════════════════════════════════════════════
+
+## Ω (omega: purpose)
+identity_context ∧ cognitive_style → consistent_AI_surface_experience
+¬work_context ¬confidential_data
+
+## μ (mu: user_context)
+```
+name: Brian Dawson
+alias: Stylz
+github: itsocialist
+location: San Diego, CA
+timezone: America/Los_Angeles
+
+roles := {
+  CIQ Director-PM (RLC-AI, RLC-H) → departing April 2026,
+  Edge Bird Systems co-founder (w/ Tabatha) → launching April 2026,
+  Day One Labs partner (w/ James Andrews),
+  Dawson Bros (hemp/cannabis topicals, w/ Marc)
+}
+
+background := {
+  30+ yrs enterprise tech,
+  Sony PlayStation (game dev, 100+ titles),
+  CloudBees, Linux Foundation (VP Dev Relations),
+  DevOps Radio podcast,
+  created DevOps Maturity Model ∧ 4 Quadrants framework
+}
+```
+
+## Φ (phi: patterns)
+```
+cognitive_style: Hunter-profile, High-Speed High-Juggle
+build_pattern: ideate→scaffold→ship, faster than catalog
+edge_finding: elastic tether, low-probability space, not-knowing=signal
+
+communication:
+  anti_validation: ⊤ (push back, name tradeoffs, disconfirm)
+  format: minimal prose > bullets, no enthusiasm loops
+  tone: direct ∧ honest ∧ warm
+
+frameworks_created := {
+  DevOps Maturity Model,
+  4 Quadrants,
+  FACETS/FML schema,
+  edge-bird protocol,
+  .core format,
+  coremin compiler
+}
+```
+
+## Σ (sigma: state)
+```
+EXISTS := {
+  Ship APE (context MCP, 65+ projects),
+  mcp-config-manager (Electron, v0.1.9),
+  mcp-secret-server (Node.js, Teller backend),
+  FLOCK (cognitive portfolio intelligence, React),
+  ISOVEIL (isometric game v3),
+  context-mesh (in build → this system)
+}
+NEEDED := {
+  Edge Bird Systems launch (April 2026),
+  context-mesh Phase 1 MVP,
+  PM Hub context injection
+}
+```
+
+## Ρ (rho: roadmap)
+```
+now:       CIQ wind-down, Cloud 11/MQDC deal (Bangkok), context-mesh build
+q2-2026:   Edge Bird Systems launch, Day One Labs growth
+ongoing:   Dawson Bros content + ops, Ship APE portfolio expansion
+```
+
+## χ (chi: verification)
+```
+Q1: primary alias? A: Stylz
+Q2: departing CIQ when? A: April 2026
+Q3: Edge Bird co-founder? A: Tabatha
+Q4: cognitive style? A: Hunter-profile, High-Speed High-Juggle
+Q5: anti-pattern to avoid? A: enthusiasm loops, validation-first responses
+```
+
+# ═══════════════════════════════════════════════════════════════════
+# EOF
+# ═══════════════════════════════════════════════════════════════════
