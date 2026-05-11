@@ -205,7 +205,7 @@ export class DirectionEngine {
     // project:edge-bird → personal (personal project)
     // Heuristic: check if project namespace has a registered surface owner
     // For now, default to 'work' unless explicitly personal
-    const personalProjects = new Set(['edge-bird', 'dawson-bros', 'day-one-personal']);
+    const personalProjects = new Set(['edge-bird', 'dawson-bros', 'day-one-personal', 'context-mesh']);
     const slug = namespace.replace('project:', '');
     return personalProjects.has(slug) ? 'personal' : 'work';
   }
