@@ -1,0 +1,23 @@
+{
+  "name": "context-mesh-scheduler",
+  "version": "0.1.0",
+  "description": "Nightly batch sync scheduler for context-mesh",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "sync": "node dist/index.js sync",
+    "sync:dry": "node dist/index.js sync:dry"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "node-cron": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/node-cron": "^3.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
